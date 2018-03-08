@@ -1,0 +1,50 @@
+<!--
+Title       : Sample HTML Program
+Programmer  : Harold Smith
+Date        : Feb 28, 2018
+Purpose     : To experiment with HTML, embedded CSS, and video backgrounds
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+           Contact Form   
+        </title>
+      
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        </head>
+        <h1 id="title">Manual Career and Technical Center</h1>
+        <h2>Contact Form</h2>
+        <h2 id="description">Please fill out and submit the form in order to receive more information.</h2>
+
+    <video autoplay loop id="myVideo" muted>
+              <source src="emtedited.mp4" type="video/mp4" >
+              Your browser does not support HTML5 video.
+    </video>
+
+    <div class="container">
+      <form action="mailto:hasmith@kcpublicschools.org" method="post" enctype="text/plain">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <p></p>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <p></p>
+        <label for="country">School  </label>
+        <select id="country" name="country">
+            <option value="central">Central</option>
+            <option value="paseo">Paseo</option>
+            <option value="southwest">Southwest</option>
+        </select>
+        <p></p>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="How may we help you?" style="height:200px"></textarea>
+        <p></p>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+</body>
+</html>
